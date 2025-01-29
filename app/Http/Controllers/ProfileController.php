@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\ProfileUpdateRequest;
-use Illuminate\Http\RedirectResponse;
+use App\Models\Contact;
+use Illuminate\View\View;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Support\Facades\Redirect;
-use Illuminate\View\View;
+use App\Http\Requests\ProfileUpdateRequest;
 
 class ProfileController extends Controller
 {
@@ -56,5 +57,19 @@ class ProfileController extends Controller
         $request->session()->regenerateToken();
 
         return Redirect::to('/');
+    }
+
+    public function inbox()
+    {
+        $messages = Contact::latest()->paginate(10); // Affiche les messages les plus récents
+        return view('dashboard', compact('messages'));
+    }
+
+    public function deleteMessage($id)
+    {
+        $message = Contact::findOrFail($id);
+        $message->delete();
+
+        return redirect()->route('dashboard')->with('success', 'Message supprimé avec succès.');
     }
 }
