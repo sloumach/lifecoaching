@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Life Coach - Free Bootstrap 4 Template by Colorlib</title>
+    <title>Journey To Fit</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -41,25 +41,25 @@
 		</div>
 		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
 	    <div class="container">
-	    	<a class="navbar-brand" href="index.html">Life<span>coach</span></a>
+	    	<a class="navbar-brand" href="{{ route('welcome') }}">Life<span>coach</span></a>
 	    	<form action="#" class="searchform order-sm-start order-lg-last">
-          <div class="form-group d-flex">
+          {{-- <div class="form-group d-flex">
             <input type="text" class="form-control pl-3" placeholder="Search">
             <button type="submit" placeholder="" class="form-control search"><span class="fa fa-search"></span></button>
-          </div>
+          </div> --}}
         </form>
-	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	      {{-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="fa fa-bars"></span> Menu
-	      </button>
+	      </button> --}}
 	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav m-auto">
+	        {{-- <ul class="navbar-nav m-auto">
 	        	<li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
 	        	<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
 	        	<li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
 	          <li class="nav-item"><a href="success-stories.html" class="nav-link">Stories</a></li>
 	          <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
 	          <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
-	        </ul>
+	        </ul> --}}
 	      </div>
 	    </div>
 	  </nav>
@@ -74,7 +74,7 @@
 		          	<div class="text w-100 text-center">
 		          		<h2>We are your personal life coach</h2>
 			            <h1 class="mb-4">Discover the secrets of life</h1>
-			            <p><a href="#" class="btn btn-white">Connect with us</a></p>
+
 		            </div>
 		          </div>
 		        </div>
@@ -204,7 +204,7 @@
     	</div>
     </section>
 
-    <section class="ftco-section bg-light">
+    {{-- <section class="ftco-section bg-light">
     	<div class="container">
     		<div class="row justify-content-center pb-5 mb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
@@ -252,9 +252,9 @@
 	        </div>
         </div>
     	</div>
-    </section>
+    </section> --}}
 
-    <section class="ftco-counter" id="section-counter">
+    {{-- <section class="ftco-counter" id="section-counter">
     	<div class="container">
 				<div class="row">
           <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
@@ -299,11 +299,9 @@
           </div>
         </div>
     	</div>
-    </section>
+    </section> --}}
 
-
-
-    <section class="ftco-section testimony-section bg-secondary">
+    {{-- <section class="ftco-section testimony-section bg-secondary">
       <div class="container">
         <div class="row justify-content-center pb-5 mb-3">
           <div class="col-md-7 heading-section heading-section-white text-center ftco-animate">
@@ -393,9 +391,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> --}}
 
-    <section class="ftco-section">
+    {{-- <section class="ftco-section">
       <div class="container">
         <div class="row justify-content-center pb-5 mb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
@@ -448,10 +446,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> --}}
 
-
-    <section class="ftco-section ftco-no-pb ftco-no-pt">
+    {{-- <section class="ftco-section ftco-no-pb ftco-no-pt">
       <div class="container">
       	<div class="row">
 	      	<div class="col-md-12">
@@ -473,9 +470,9 @@
 			    </div>
 			  </div>
       </div>
-    </section>
+    </section> --}}
 
-    <section class="ftco-section bg-light">
+    {{-- <section class="ftco-section bg-light">
     	<div class="container">
     		<div class="row justify-content-center pb-5 mb-3">
           <div class="col-md-7 heading-section text-center ftco-animate">
@@ -558,7 +555,7 @@
 	        </div>
 	      </div>
     	</div>
-    </section>
+    </section> --}}
 
     <footer class="footer">
 			<div class="container-fluid px-lg-5">
@@ -574,7 +571,7 @@
 		              <li class="ftco-animate"><a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><span class="fa fa-instagram"></span></a></li>
 		            </ul>
 							</div>
-							<div class="col-md-8">
+							{{-- <div class="col-md-8">
 								<div class="row justify-content-center">
 									<div class="col-md-12 col-lg-10">
 										<div class="row">
@@ -608,35 +605,37 @@
 										</div>
 									</div>
 								</div>
-							</div>
+							</div> --}}
 						</div>
 						<div class="row mt-md-5">
 							<div class="col-md-12">
 								<p class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-					  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
+					  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <a href="https://nicheknights.com" target="_blank">nicheknights.com</a>
 					  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-3 py-md-5 py-4 aside-stretch-right pl-lg-5">
-						<h2 class="footer-heading">Free consultation</h2>
-						<form action="#" class="form-consultation">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Name">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Your Email">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Subject">
-              </div>
-              <div class="form-group">
-                <textarea name="" id="" cols="30" rows="3" class="form-control" placeholder="Message"></textarea>
-              </div>
-              <div class="form-group">
-              	<button type="submit" class="form-control submit px-3">Send A Message</button>
-              </div>
-            </form>
+						<h2 class="footer-heading">Book a call:</h2>
+                        <form action="{{ route('contact.store') }}" method="POST" class="form-consultation">
+                            @csrf
+                            <div class="form-group">
+                                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" cols="30" rows="3" class="form-control" placeholder="Message" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="form-control submit px-3">Send A Message</button>
+                            </div>
+                        </form>
+
 					</div>
 				</div>
 			</div>
